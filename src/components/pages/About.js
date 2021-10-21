@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className="container">
-            <h1 className="fw-bold mt-5">
+        <div className="container mt-5">
+            <h1 className="fw-bold">
                 About Me
             </h1>
 

@@ -14,7 +14,7 @@ export default function Resume() {
 
                 </div>
 
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center mb-5">
 
                     <div id="collapseExample" className="collapse">
                         <embed src="./assets/images/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="500px" height="650px" />
