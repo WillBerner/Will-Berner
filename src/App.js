@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 import Header from "./components/Header.js";
-import Portfolio from "./components/Portfolio.js";
-import About from "./components/About.js";
+import Portfolio from "./components/pages/Portfolio.js";
+import About from "./components/pages/About.js";
 import Footer from './components/Footer.js';
-import Contact from './components/Contact.js';
-import Resume from './components/Resume.js';
+import Contact from './components/pages/Contact.js';
+import Resume from './components/pages/Resume.js';
 
 export default function App() {
 
