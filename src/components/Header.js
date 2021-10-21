@@ -17,7 +17,7 @@ export default function Header({ setPage }) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <button className="btn mt-1" onClick={setAbout} >About</button>
+                            <button className="btn mt-1" onClick={setAbout} >About Me</button>
                         </li>
                         <li className="nav-item">
                             <button className="btn mt-1" onClick={setPortfolio}>Portfolio</button>
