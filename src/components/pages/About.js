@@ -10,7 +10,7 @@ export default function About() {
             <img src="http://placehold.it/150" className="rounded-circle my-4" alt="Me - Will Berner" />
 
             <p className="my-4">
-                My name is Will and I'm a recent graduate of UNC Chapel Hill's Deptartment of Computer Science. I'm now taking a Coding Bootcamp to continue to learn new technologies and build my skill set! I love any sort of programming, but enjoy creating Javascript web-based projects the most.
+                My name is Will and I'm a recent graduate of UNC Chapel Hill's Deptartment of Computer Science. I'm now taking a Coding Bootcamp to continue to learn new technologies and build my skill set! I love any sort of programming, but enjoy creating Javascript web projects the most.
             </p>
             <p className="my-4">
                 I'm a long time resident of the triangle area, specifically Chapel Hill. I got into computer science when I was still young in Middle School through building custom computers. I thought technology and computers were so important considering how much I used them daily so I thought I'd demystify the magic myself and learn how it all happens. I ended up acing my first programming course at UNC, was recruited to be an LA, and went on to help teach the course for the next five semesters.

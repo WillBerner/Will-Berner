@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Header({ setPage }) {
+export default function Header({ setPage, currentPage }) {
 
     let setAbout = () => { setPage("About") }
     let setPortfolio = () => { setPage("Portfolio") }

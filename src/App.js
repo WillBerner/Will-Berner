@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div>
-      <Header setPage={setPage}/>
+      <Header setPage={setPage} currentPage={page}/>
 
       {toDisplay}
 
