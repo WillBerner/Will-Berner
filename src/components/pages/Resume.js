@@ -14,8 +14,13 @@ export default function Resume() {
             <div className="container">
                 <div className="row mb-5 justify-content-center">
 
-                    <div className="col-md-auto">
+                    <h3 className="text-center mb-3">Resume</h3>
+
+                    <div className="col-3 text-center mt-2">
                         <button className="btn" data-bs-toggle="collapse" href="#collapseExample">View Resume</button>
+
+                    </div>
+                    <div className="col-3 text-center">
                         <button className="btn"><a className="btn" href="./assets/images/Resume.pdf" download="Will Berner - Resume">Download</a></button>
                     </div>
 
@@ -30,8 +35,8 @@ export default function Resume() {
                 </div>
 
                 <div className="row justify-content-center">
-                    <div className="col-md-auto">
-                        <h4 className="mb-5">Proficiencies</h4>
+                    <div className="col-6">
+                        <h4 className="mb-5 text-center">Proficiencies</h4>
                     </div>
                 </div>
 

@@ -12,7 +12,7 @@ export default function About() {
 
             <div className="row justify-content-center">
                 <div className="col">
-                    <h1 className="fw-bold text-center">
+                    <h1 className="text-center">
                         About Me
                     </h1>
                 </div>
@@ -24,7 +24,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row mx-3">
                 <p className="my-4">
                     My name is Will and I'm a recent graduate of UNC Chapel Hill's Deptartment of Computer Science. I'm now taking a Coding Bootcamp to continue to learn new technologies and build my skill set! I love any sort of programming, but enjoy creating Javascript web projects the most.
                 </p>

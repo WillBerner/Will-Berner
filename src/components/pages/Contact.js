@@ -2,23 +2,23 @@ import React from 'react'
 
 export default function Contact() {
 
-    const validateEmail = ({target}) => {
-        console.log(target.value);
+    const validateEmail = ({ target: { value } }) => {
+        console.log(value);
     }
 
-    const validateMessage = ({target}) => {
-        console.log(target.value);
+    const validateMessage = ({ target: { value } }) => {
+        console.log(value);
     }
 
-    const validateName = ({target}) => {
-        console.log(target.value);
+    const validateName = ({ target: { value } }) => {
+        console.log(value);
     }
 
     return (
         <div className="container my-5">
             <div className="row justify-content-center">
                 <div className="col-6">
-                    <h3 className="mb-3">Contact Me</h3>
+                    <h3 className="mb-5 text-center">Contact Me</h3>
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nameInput" className="form-label">Name</label>
