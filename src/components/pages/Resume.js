@@ -1,6 +1,13 @@
 import React from 'react'
 
 export default function Resume() {
+
+    let proficiencies = {
+        frontend: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design", "React", "Vue", "Bootstrap"],
+        backend: ["APIs", "Node", "Express", "Routing", "MySQL, Sequelize", "MongoDB, Mongoose", "REST", "GraphQL"]
+    };
+
+
     return (
         <div className="d-flex justify-content-center my-5">
 
@@ -24,20 +31,37 @@ export default function Resume() {
 
                 <div className="row justify-content-center">
                     <div className="col-md-auto">
-                        <h4>Proficiencies</h4>
+                        <h4 className="mb-5">Proficiencies</h4>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col mx-4">
+                        <h5 className="text-center">Front End</h5>
                         <ul className="list-group">
-                            <li className="list-group-item">
-                                One thing
-                            </li>
-                            <li className="list-group-item">
-                                Another thing
-                            </li>
-                            <li className="list-group-item">
-                                A third thing
-                            </li>
+                            {proficiencies.frontend.map((proficiency, i) => {
+                                return (
+                                    <li className="list-group-item" key={i}>
+                                        {proficiency}
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                    <div className="col mx-4">
+                        <h5 className="text-center">Back End</h5>
+                        <ul className="list-group">
+                            {proficiencies.backend.map((proficiency, i) => {
+                                return (
+                                    <li className="list-group-item" key={i}>
+                                        {proficiency}
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>
+
 
             </div>
 
