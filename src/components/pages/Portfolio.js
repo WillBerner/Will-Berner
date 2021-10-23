@@ -9,26 +9,58 @@ export default function Portfolio() {
         <div className="container my-5">
             <h2 className="mb-5 text-center">Portfolio</h2>
 
-
-
             <div className="row mb-4 justify-content-center">
                 {projectData.Projects.map((project, i) => {
-                    return (
-                        <div className="col-6" key={i}>
-                            <Project project={project} />
-                        </div>
-                    )
+
+                    if (i < 2) {
+
+                        return (
+                            <div className="col-6" key={i}>
+                                <Project project={project} />
+                            </div>
+                        )
+
+                    } else {
+                        return null;
+                    }
                 })}
             </div>
 
-            {/* <div className="row mb-4 justify-content-center">
-                <div className="col-6">
-                    <Project />
-                </div>
-                <div className="col-6">
-                    <Project />
-                </div>
-            </div> */}
+            <div className="row mb-5 justify-content-center">
+                {projectData.Projects.map((project, i) => {
+
+                    if (i >= 2 && i < 4) {
+
+                        return (
+                            <div className="col-6" key={i}>
+                                <Project project={project} />
+                            </div>
+                        )
+
+                    } else {
+                        return null;
+                    }
+                })}
+            </div>
+
+            <div className="row mb-5 justify-content-center">
+                {projectData.Projects.map((project, i) => {
+
+                    if (i >= 4 && i < 6) {
+
+                        return (
+                            <div className="col-6" key={i}>
+                                <Project project={project} />
+                            </div>
+                        )
+
+                    } else {
+                        return null;
+                    }
+                })}
+            </div>
+
+
 
         </div>
     )

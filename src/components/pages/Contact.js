@@ -1,17 +1,22 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
 
     const validateEmail = ({ target: { value } }) => {
-        console.log(value);
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(String(value).toLowerCase())) {
+            toast("Please enter a valid email address.");
+        }
+
+        return;
     }
 
     const validateMessage = ({ target: { value } }) => {
-        console.log(value);
-    }
-
-    const validateName = ({ target: { value } }) => {
-        console.log(value);
+        if (!value) {
+            toast("Please include a message.");
+        }
     }
 
     return (
@@ -22,7 +27,7 @@ export default function Contact() {
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nameInput" className="form-label">Name</label>
-                            <input type="text" className="form-control" id="nameInput" required onBlur={validateName} />
+                            <input type="text" className="form-control" id="nameInput" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="emailInput" className="form-label">Email Address</label>
@@ -36,6 +41,8 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
+
+            <ToastContainer />
 
 
         </div>

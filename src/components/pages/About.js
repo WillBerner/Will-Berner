@@ -20,7 +20,7 @@ export default function About() {
 
             <div className="row mb-4 justify-content-center">
                 <div className="col-md-auto">
-                    <img src="http://placehold.it/200" className="rounded-circle my-4 img-responsive center-block d-block mx-auto" alt="Me - Will Berner" style={profilePicStyle} />
+                    <img src="./assets/images/me.jpeg" className="rounded-circle my-4 img-responsive center-block d-block mx-auto" alt="Me - Will Berner" style={profilePicStyle} />
                 </div>
             </div>
 
