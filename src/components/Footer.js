@@ -2,11 +2,13 @@ import React from 'react'
 
 export default function Footer() {
 
+    // Style footer icons and keep the color neutral
     const iconStyle = {
         color: "#000000",
         fontSize: "2em"
     }
 
+    // Render a few icons with social media links
     return (
         <footer className="footer mt-auto py-3 bg-light">
             <div className="d-flex justify-content-center">

@@ -2,12 +2,13 @@ import React from 'react'
 
 export default function Resume() {
 
+    // Store proficiencies in array to list out
     let proficiencies = {
         frontend: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design", "React", "Vue", "Bootstrap"],
         backend: ["APIs", "Node", "Express", "Routing", "MySQL, Sequelize", "MongoDB, Mongoose", "REST", "GraphQL"]
     };
 
-
+    // Render resume page
     return (
         <div className="d-flex justify-content-center my-5">
 

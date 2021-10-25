@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Import project components and project data
 import Project from '../Project.js'
 import projectData from "../../Data/Projects.js";
 
@@ -9,58 +10,22 @@ export default function Portfolio() {
         <div className="container my-5">
             <h2 className="mb-5 text-center">Portfolio</h2>
 
-            <div className="row mb-4 justify-content-center">
-                {projectData.Projects.map((project, i) => {
-
-                    if (i < 2) {
-
-                        return (
-                            <div className="col-6" key={i}>
-                                <Project project={project} />
-                            </div>
-                        )
-
-                    } else {
-                        return null;
-                    }
-                })}
-            </div>
-
-            <div className="row mb-5 justify-content-center">
-                {projectData.Projects.map((project, i) => {
-
-                    if (i >= 2 && i < 4) {
-
-                        return (
-                            <div className="col-6" key={i}>
-                                <Project project={project} />
-                            </div>
-                        )
-
-                    } else {
-                        return null;
-                    }
-                })}
-            </div>
-
-            <div className="row mb-5 justify-content-center">
-                {projectData.Projects.map((project, i) => {
-
-                    if (i >= 4 && i < 6) {
-
-                        return (
-                            <div className="col-6" key={i}>
-                                <Project project={project} />
-                            </div>
-                        )
-
-                    } else {
-                        return null;
-                    }
-                })}
-            </div>
-
-
+            {/* Two projects per row maximum, so nested-map project pairs into rows */}
+            {projectData.Projects.map((pair, i) => {
+                return (
+                    // For every pair, create a new row
+                    <div className="row mb-4 justify-content-center" key={i}>
+                        {pair.map(project => {
+                            return (
+                                // For each project, create a new column
+                                <div className="col-md-6 col-sm-12 mb-3" key={project.title}>
+                                    <Project project={project} />
+                                </div>
+                            );
+                        })}
+                    </div>
+                );
+            })}
 
         </div>
     )
