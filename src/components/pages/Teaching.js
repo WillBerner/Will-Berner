@@ -45,7 +45,7 @@ export default function Teaching() {
                         </small>
                     </p>
                     <p className="text-center">
-                        My first teaching experience came when I was a second-semester freshman. After completing my first programming class in the fall, COMP 110, I was one of a few selected by my professor Kris Jordan to join the TAing team for the 700-student course from over 120 applicants.
+                        My first teaching experience came when I was a second-semester freshman. After completing my first programming class in the fall, COMP 110, I was one of a few selected from over 120 applicants by my professor Kris Jordan to join the TAing team for the 700-student course.
                     </p>
                     <p className="text-center">
                         First teaching in Java and later in TypeScript after the course changed languages, my main responsibilities were to tutor students one-on-one to help them complete assignments or review concepts and to help in the huge lectures when students had questions about in-class activities. Throughout my time with COMP 110, I individually tutored over 250 different students on over 350 separate occasions. I also mentored at semesterly hackathons, graded tests and quizzes, and answered student emails.
