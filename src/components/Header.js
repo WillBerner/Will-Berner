@@ -3,10 +3,11 @@ import React from 'react'
 export default function Header({ setPage, currentPage }) {
 
     // Set a new page based on user input
-    let setAbout = () => { setPage("About") }
-    let setPortfolio = () => { setPage("Portfolio") }
-    let setContact = () => { setPage("Contact") }
-    let setResume = () => { setPage("Resume") }
+    const setAbout = () => { setPage("About") }
+    const setPortfolio = () => { setPage("Portfolio") }
+    const setContact = () => { setPage("Contact") }
+    const setResume = () => { setPage("Resume") }
+    const setTeaching = () => { setPage("Teaching") }
 
     // Render header - style page names based on what current page is
     return (
@@ -26,6 +27,9 @@ export default function Header({ setPage, currentPage }) {
                         </li>
                         <li className="nav-item">
                             <button className={currentPage === "Portfolio" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setPortfolio} id="portfolio">Portfolio</button>
+                        </li>
+                        <li className="nav-item">
+                            <button className={currentPage === "Teaching" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setTeaching} id="teaching">Teaching</button>
                         </li>
                         <li className="nav-item">
                             <button className={currentPage === "Contact" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setContact} id="contact">Contact</button>

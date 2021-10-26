@@ -39,7 +39,7 @@ export default function Contact() {
         <div className="container my-5">
             <div className="row justify-content-center">
                 <div className="col-6">
-                    <h3 className="mb-5 text-center">Contact Me</h3>
+                    <h2 className="mb-5 text-center">Contact Me</h2>
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nameInput" className="form-label">Name</label>

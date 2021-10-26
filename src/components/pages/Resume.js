@@ -4,8 +4,8 @@ export default function Resume() {
 
     // Store proficiencies in array to list out
     let proficiencies = {
-        frontend: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design", "React", "Vue", "Bootstrap"],
-        backend: ["APIs", "Node", "Express", "Routing", "MySQL, Sequelize", "MongoDB, Mongoose", "REST", "GraphQL"]
+        frontend: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design", "React", "Vue", "Bootstrap", "Materialize", "JSON"],
+        backend: ["APIs", "Node", "Express", "Routing", "MySQL, Sequelize", "MongoDB, Mongoose", "REST", "GraphQL", "Jest", "Axios"]
     };
 
     // Render resume page
@@ -15,11 +15,10 @@ export default function Resume() {
             <div className="container">
                 <div className="row mb-5 justify-content-center">
 
-                    <h3 className="text-center mb-3">Resume</h3>
+                    <h2 className="text-center mb-3">Resume</h2>
 
                     <div className="col-3 text-center mt-2">
                         <button className="btn" data-bs-toggle="collapse" href="#collapseExample">View Resume</button>
-
                     </div>
                     <div className="col-3 text-center">
                         <button className="btn"><a className="btn" href="./assets/images/Resume.pdf" download="Will Berner - Resume">Download</a></button>
