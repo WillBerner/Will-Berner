@@ -103,7 +103,7 @@ export default function Teaching() {
 
             <div className="row mb-4 justify-content-center">
                 <div className="col-12">
-                    <img src="./assets/images/OpenHouse.jpg" className="rounded img-responsive center-block d-block mx-auto" alt="Dr Fred Brooks and the COMP 110 Team" title="Dr Fred Brooks and the COMP 110 Team" style={OpenHouseStyle} />
+                    <img src="./assets/images/OpenHouse.jpg" className="rounded img-responsive center-block d-block mx-auto" alt="Me explaing how Stereolithographic 3D printers work" title="Me explaing how Stereolithographic 3D printers work" style={OpenHouseStyle} />
 
                 </div>
                 <div className="col-lg-6 col-md-12">
