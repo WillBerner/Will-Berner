@@ -41,24 +41,24 @@ export default function Resume() {
                 </div>
 
                 <div className="row">
-                    <div className="col mx-4">
+                    <div className="col mx-5">
                         <h5 className="text-center">Front End</h5>
                         <ul className="list-group">
                             {proficiencies.frontend.map((proficiency, i) => {
                                 return (
-                                    <li className="list-group-item" key={i}>
+                                    <li className="list-group-item text-center" key={i}>
                                         {proficiency}
                                     </li>
                                 )
                             })}
                         </ul>
                     </div>
-                    <div className="col mx-4">
+                    <div className="col mx-5">
                         <h5 className="text-center">Back End</h5>
                         <ul className="list-group">
                             {proficiencies.backend.map((proficiency, i) => {
                                 return (
-                                    <li className="list-group-item" key={i}>
+                                    <li className="list-group-item text-center" key={i}>
                                         {proficiency}
                                     </li>
                                 )

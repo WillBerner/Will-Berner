@@ -22,7 +22,7 @@ export default function About() {
 
             <div className="row mb-4 justify-content-center">
                 <div className="col-md-auto">
-                    <img src="./assets/images/me.jpeg" className="rounded-circle my-4 img-responsive center-block d-block mx-auto" alt="Me - Will Berner" style={profilePicStyle} />
+                    <img src="./assets/images/me.jpeg" className="rounded-circle my-4 img-responsive center-block d-block mx-auto" alt="Me - Will Berner" title="Me - Will Berner" style={profilePicStyle} />
                 </div>
             </div>
 
@@ -35,11 +35,18 @@ export default function About() {
                     As a freshman I ended up acing my first programming course at UNC, was recruited to be an LA, and went on to help teach intro courses for the next five semesters. With languages such as Java, Javascript, and Python, I've taught a wide range of topics from Object-Oriented to Functional Programming, ES6 and higher-order functions, the difference between reference and value types, and parsing scientific data for analysis.
                 </p>
                 <p className="my-4">
-                    I'm currently taking a Coding Bootcamp to continue to learn new technologies and build my skill set while I apply to full-time roles. I love any sort of programming from OOP to Functional, but enjoy creating Javascript web-based projects the most.
+                    I'm currently taking a Web Development Bootcamp to continue to learn new technologies and build my skill set while I apply to full-time roles. I love any sort of programming from OOP to Functional, but enjoy creating Javascript web-based projects the most.
                 </p>
                 <p className="mt-4 mb-5">
                     When I don't have VSCode pulled up I'm out running, hiking, biking, watching soccer, or playing with my two-year-old dog, Sudo.
                 </p>
+            </div>
+
+            <div className="row mb-4 justify-content-center">
+                <div className="col-12">
+                    <img src="./assets/images/Sudo.jpg" className="rounded img-responsive center-block d-block mx-auto" alt="My dog Sudo" title="My dog Sudo" style={profilePicStyle} />
+                    <p className="text-center">Sudo git fetch!</p>
+                </div>
             </div>
 
         </div>
