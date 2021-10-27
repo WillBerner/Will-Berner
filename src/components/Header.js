@@ -8,6 +8,7 @@ export default function Header({ setPage, currentPage }) {
     const setContact = () => { setPage("Contact") }
     const setResume = () => { setPage("Resume") }
     const setTeaching = () => { setPage("Teaching") }
+    const setResearch = () => { setPage("Research")}
 
     // Render header - style page names based on what current page is
     return (
@@ -30,6 +31,9 @@ export default function Header({ setPage, currentPage }) {
                         </li>
                         <li className="nav-item">
                             <button className={currentPage === "Teaching" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setTeaching} id="teaching">Teaching</button>
+                        </li>
+                        <li className="nav-item">
+                            <button className={currentPage === "Research" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setResearch} id="research">Research</button>
                         </li>
                         <li className="nav-item">
                             <button className={currentPage === "Contact" ? "btn mt-1 fw-bold" : "btn mt-1"} onClick={setContact} id="contact">Contact</button>

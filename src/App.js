@@ -7,6 +7,7 @@ import Footer from './components/Footer.js';
 import Contact from './components/pages/Contact.js';
 import Resume from './components/pages/Resume.js';
 import Teaching from './components/pages/Teaching.js';
+import Research from './components/pages/Research.js';
 
 export default function App() {
 
@@ -24,6 +25,9 @@ export default function App() {
       break;
     case "Teaching":
       toDisplay = <Teaching />;
+      break;
+    case "Research":
+      toDisplay = <Research />;
       break;
     case "Contact":
       toDisplay = <Contact />;
